@@ -1,2 +1,27 @@
 name: A basic workflow
 on:
+ push:
+   branches: [ "main" ]
+ pull_request:
+   branches: ["main"]
+
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - name: run a oneline script
+        run: echo hello, world!
+      - name: run on multiple lines 
+        run: |
+           echo add 
+           echo test and deploy project.
+  build-db:
+    needs: build-app
+    runs-on: window-latest
+
+  package:
+    needs: [build-app, build-db]
+    runs-on: macos-latest
+
+
