@@ -6,16 +6,6 @@ on:
    branches: ["main"]
 
 jobs:
-  build-app:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: action/checkout@v3
-      - name: run a oneline script
-        run: echo hello, world!
-      - name: run on multiple lines 
-        run: |
-           echo "adding" 
-           echo "test and deploy project".
 
   build-api:
     runs-on: windows-latest
@@ -23,16 +13,11 @@ jobs:
       - name: Build API
         run: echo "Building API"
 
-  build-db:
-    needs: build-app
-    runs-on: window-latest
-    steps:
-      - name: Build Database
-        run: echo "hello windows"
+  
 
   package:
-    needs: [build-app, build-db]
-    runs-on: macos-latest
+    needs: [build-api]
+    runs-on: windows-latest
     steps:
       - name: Package for MacOs
         run: echo "hello MacOs"
