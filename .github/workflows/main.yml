@@ -14,24 +14,27 @@ jobs:
         run: echo hello, world!
       - name: run on multiple lines 
         run: |
-           echo add 
-           echo test and deploy project.
-           
+           echo "adding" 
+           echo "test and deploy project".
+
   build-api:
     runs-on: windows-latest
     steps:
-      - run: echo "Building API"
+      - name: Build API
+        run: echo "Building API"
 
   build-db:
     needs: build-app
     runs-on: window-latest
     steps:
-      - run: echo "hello windows"
+      - name: Build Database
+        run: echo "hello windows"
 
   package:
     needs: [build-app, build-db]
     runs-on: macos-latest
     steps:
-      - run: echo "hello MacOs"
+      - name: Package for MacOs
+        run: echo "hello MacOs"
 
 
