@@ -16,12 +16,22 @@ jobs:
         run: |
            echo add 
            echo test and deploy project.
+           
+  build-api:
+    runs-on: windows-latest
+    steps:
+      - run: echo "Building API"
+
   build-db:
     needs: build-app
     runs-on: window-latest
+    steps:
+      - run: echo "hello windows"
 
   package:
     needs: [build-app, build-db]
     runs-on: macos-latest
+    steps:
+      - run: echo "hello MacOs"
 
 
