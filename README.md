@@ -6,3 +6,6 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit debitis rerum
 
 ## Repository Purpose  
 Practicing Open Source Contribution with [Shubham Sarda](https://github.com/ShubhamSarda)
+
+## Additional info
+Minim minim exercitation labore non cupidatat laborum eu occaecat ea. Ut ea excepteur incididunt exercitation. Est est cillum tempor sit consectetur et nisi reprehenderit irure nisi ullamco voluptate ut eiusmod. Amet ullamco dolore anim laborum anim. Sit adipisicing cillum dolor ea nostrud laboris. Dolor aliquip ullamco velit dolor esse dolore veniam.
