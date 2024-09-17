@@ -1,0 +1,25 @@
+name: A basic workflow
+on:
+ push:
+   branches: [ "main" ]
+ pull_request:
+   branches: ["main"]
+
+jobs:
+
+  build-api:
+    runs-on: windows-latest
+    steps:
+      - name: Build API
+        run: echo "Building API"
+
+  
+
+  package:
+    needs: [build-api]
+    runs-on: windows-latest
+    steps:
+      - name: Package for MacOs
+        run: echo "hello MacOs"
+
+
