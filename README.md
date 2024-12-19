@@ -5,4 +5,5 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit debitis rerum
 
 
 ## Repository Purpose  
-Practicing Open Source Contribution with [Shubham Sarda](https://github.com/ShubhamSarda)
+Practicing Open Source Contribution with [Naresh Kumar S](https://github.com/NareshKumar1553)
+
